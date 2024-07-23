@@ -1,6 +1,6 @@
 # 📱 Django Web Chat Application
 
-Welcome to the Django Web Chat Application! This project is a real-time chat application built using Django and Django Channels. Users can join chat rooms and communicate with each other in real-time. The project leverages the power of WebSockets to provide an interactive chatting experience.
+Welcome to the Django Web Chat Application! This project is a chat application built using Django and Django Channels. Users can join chat rooms and communicate with each other in real-time. The project leverages the power of WebSockets to provide an interactive chatting experience.
 
 ## 🌟 Features
 
