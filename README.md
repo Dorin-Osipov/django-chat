@@ -1,20 +1,9 @@
-# 📱 Django Web Chat Application
+# Django room chat
 
-Welcome to the Django Web Chat Application! This project is a chat application built using Django and Django Channels. Users can join chat rooms and communicate with each other in real-time. The project leverages the power of WebSockets to provide an interactive chatting experience.
+Join a room and exchange messages over a WebSocket connection. Django Channels routes each connection to a room group, and the application saves chat messages for later retrieval.
 
-## 🌟 Features
+## Follow a message
 
-- **Real-time Messaging**: Chat with others in real-time using WebSockets.
-- **Multiple Chat Rooms**: Create and join multiple chat rooms.
-- **User Authentication**: Secure user authentication and session management.
-- **Responsive Design**: Fully responsive design using Tailwind CSS for seamless user experience on all devices.
-- **User-Friendly Interface**: Simple and intuitive interface for easy navigation and chatting.
-
-## 🛠️ Technologies Used
-
-- **Django**: The high-level Python web framework.
-- **Django Channels**: Extends Django to handle WebSockets and other asynchronous protocols.
-- **WebSockets**: For real-time, full-duplex communication.
-- **HTML/CSS**: Structure and styling of the web application.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
-- **JavaScript**: Adds interactive elements to the web pages.
+1. Start with the [WebSocket routes](mysite/chatapp/routing.py) to see how a room is selected.
+2. Read the [chat consumer](mysite/chatapp/consumers.py) for connection handling, group broadcasts and database writes.
+3. Open the [room template](mysite/chatapp/templates/chatapp/room.html) for the browser side of the conversation.
